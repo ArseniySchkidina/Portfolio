@@ -1,0 +1,37 @@
+.avatar {
+    width: 629px;
+    height: 575px;
+    position: relative;
+}
+.avatar__background {
+    
+}
+.avatar__photo {
+    width: 374px;
+    height: 371px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.avatar__item {
+    width: 374px;
+    height: 371px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.avatar__item--img {
+    z-index: 3;
+}
+.avatar__item--shadow-1 {
+    background-color: rgba(240, 227, 202, 0.72);
+    transform: rotate(-24deg);
+}
+.avatar__item--shadow-2 {
+    background-color: rgba(16, 9, 231,0.72);
+    transform: rotate(31deg);
+    z-index: 2;
+}

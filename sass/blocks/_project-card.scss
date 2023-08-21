@@ -1,0 +1,46 @@
+.card-works {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+.card-works__info {
+    padding-top: 40.5px;
+    padding-bottom: 40.5px;
+    background-color: $colorCard;
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s;
+}
+.card-works:hover{
+    .card-works__info{
+        top: 0;
+    }
+}
+.card-works__info-top {
+    padding-bottom: 16px;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    border-bottom: 1px solid $colorTitle;
+}
+.card-works__wrapper-title {
+    margin-bottom: 16px;
+}
+.card-works__info-tools {
+    line-height: 1;
+}
+
+.card-works__info-bottom {
+    padding-top: 16px;
+    width: 219px;
+    margin: 0 auto;
+}
+.card-works__info-description {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}

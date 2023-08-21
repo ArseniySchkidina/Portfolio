@@ -1,0 +1,13 @@
+.preview {
+    padding-top: 73px;
+    padding-bottom: 73px;
+}
+.preview__content {
+    display: flex;
+    column-gap: 137px;
+    align-items: center;
+
+    &>*{
+        flex-shrink: 0;
+    }
+}

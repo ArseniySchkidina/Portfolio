@@ -1,0 +1,32 @@
+.social-list {
+    display: flex;
+    width: 384px;
+    column-gap: 48px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+.social-list__item {
+    &:nth-child(3){
+        min-width: 204px;
+    }
+}
+.social-link{
+    font-size: 24px;
+}
+.social-link:hover{
+    color: $colorTitle;
+    .color-svg{
+        fill: $colorTitle;
+    }
+    .color-svg-stroke{
+        stroke: $colorTitle;
+    }
+}
+.social-link__img{
+    margin-right: 16px;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+

@@ -1,0 +1,23 @@
+// base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// blocks
+@import "./blocks/titles";
+@import "./blocks/author";
+@import "./blocks/avatar";
+@import "./blocks/acsessory";
+@import "./blocks/context-button";
+@import "./blocks/card-skills";
+@import "./blocks/project-card";
+@import "./blocks/links";
+@import "./blocks/social-list";
+
+// sections
+@import "./sections/header";
+@import "./sections/preview";
+@import "./sections/adout-me";
+@import "./sections/my-skills";
+@import "./sections/my-works";
+@import "./sections/footer";

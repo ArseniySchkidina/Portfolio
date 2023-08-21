@@ -1,0 +1,65 @@
+.card-skill{
+    width: 200px; 
+    background-color: $colorCard;
+    border-radius: 10px;
+    padding-top: 60px;
+    padding-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    border-radius: 10px;
+
+    .skill-img{
+        transition: fill 0.5s;
+    }
+
+
+    &:hover{
+        .skill-img--html{
+            fill: #FC490B;
+        }
+        .skill-img--css{
+            fill: #2196F4;
+        }
+        .skill-img--js{
+            fill: #FFDF00;
+        }
+        .skill-img--scss{
+            fill: #CA669B;
+        }
+        .skill-img--git{
+            fill:#F25234;
+        }
+        .context-button--html{
+            border-color:#FC490B;
+            box-shadow: 0px 0px 4px 1px #FC490B,inset 0px 0px 4px 1px #FC490B;
+        }
+        .context-button--css{
+            border-color: #2196F4;
+            box-shadow: 0px 0px 4px 1px #2196F4,inset 0px 0px 4px 1px #2196F4;
+        }
+        .context-button--js{
+            border-color: #FFDF00;
+            box-shadow: 0px 0px 4px 1px #FFDF00,inset 0px 0px 4px 1px #FFDF00;
+        }
+        .context-button--scss{
+            border-color: #CA669B;
+            box-shadow: 0px 0px 4px 1px #CA669B,inset 0px 0px 4px 1px #CA669B;
+        }
+        .context-button--git{
+            border-color:#F25234;
+            box-shadow: 0px 0px 4px 1px #F25234,inset 0px 0px 4px 1px #F25234;
+        }
+        }
+    }
+
+.card-skill__holder-img {
+    width: 128px;
+    // height: 126px;
+
+    svg{
+        margin: 0 auto;
+    }
+}
+
