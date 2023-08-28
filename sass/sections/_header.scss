@@ -1,11 +1,25 @@
 .header{
     padding-top: 21px;
     padding-bottom: 21px;
+
+    // Tablet
+    @media (max-width: 1423px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 .header__content {
     display: flex;
     justify-content: center;
     column-gap: 522px;
+    
+    // Tablet
+    @media (max-width:1243px){
+        flex-direction: column;
+        column-gap: 0;
+        align-items: center;
+        row-gap: 16px;
+    }
 }
 .header__menu{
 }
@@ -20,3 +34,4 @@
     //     margin-right: 64px;
     // }
 }
+// /* Tablet */
