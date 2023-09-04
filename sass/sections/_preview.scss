@@ -1,6 +1,10 @@
 .preview {
     padding-top: 73px;
     padding-bottom: 73px;
+    /* Tablet */
+    @media (max-width: 1243px) {
+        padding-top: 128px;
+    }
 }
 .preview__content {
     display: flex;
@@ -9,5 +13,13 @@
 
     &>*{
         flex-shrink: 0;
+    }
+
+    /* Tablet */
+    @media (max-width: 1243px) {
+        flex-direction: column;
+        column-gap: 0;
+        align-items: center;
+        row-gap: 64px;
     }
 }

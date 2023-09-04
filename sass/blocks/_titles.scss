@@ -1,6 +1,11 @@
 .wrapper-main-title {
     margin-bottom: 13px;
+    /* Tablet */
+    @media (max-width: 1243px) {
+        margin-bottom: 9px
+    }
 }
+
 .main-title {
     font-weight: 900;
     font-size: 64px;
