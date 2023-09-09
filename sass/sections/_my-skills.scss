@@ -10,7 +10,10 @@
     column-gap: 16px;
     justify-content: center;
     
-    @media (max-width:632px){
-        width: 200;
+    @media (max-width:1243px){
+        row-gap: 16px;
+        flex-wrap: wrap;
+        
     }
+
 }

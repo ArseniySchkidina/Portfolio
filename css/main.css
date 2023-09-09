@@ -644,9 +644,11 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 632px) {
+@media (max-width: 1243px) {
   .my-skills__row-cards {
-    width: 200;
+    row-gap: 16px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
