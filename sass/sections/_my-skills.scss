@@ -1,12 +1,16 @@
 .my-skills {
-    padding-top: 75px;
+    padding-top: 64px;
     padding-bottom: 64px;
 }
 .my-skills__content {
-
 }
+
 .my-skills__row-cards {
     display: flex;
     column-gap: 16px;
     justify-content: center;
+    
+    @media (max-width:632px){
+        width: 200;
+    }
 }

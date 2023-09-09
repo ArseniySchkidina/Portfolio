@@ -301,31 +301,8 @@ select:-webkit-autofill:focus {
 }
 
 .accessory {
-  position: relative;
-  height: 90px;
-  width: 100px;
-}
-
-.acsessory__shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100px;
   width: 100px;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-}
-
-.acsessory__shadow--first {
-  background-color: rgba(240, 227, 202, 0.72);
-  -webkit-transform: rotate(-51deg);
-          transform: rotate(-51deg);
-}
-
-.acsessory__shadow--second {
-  background-color: rgba(16, 9, 231, 0.72);
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  z-index: 2;
 }
 
 .context-button {
@@ -579,6 +556,7 @@ select:-webkit-autofill:focus {
 @media (max-width: 1243px) {
   .preview {
     padding-top: 128px;
+    padding-bottom: 128px;
   }
 }
 
@@ -621,6 +599,15 @@ select:-webkit-autofill:focus {
   font-size: 24px;
   width: 904px;
   line-height: 1.05;
+  /* Tablet */
+}
+@media (max-width: 1243px) {
+  .about-me__description {
+    font-weight: 500;
+    width: 451px;
+    font-size: 22px;
+    line-height: 1.2;
+  }
 }
 
 .about-me__content {
@@ -643,7 +630,7 @@ select:-webkit-autofill:focus {
 }
 
 .my-skills {
-  padding-top: 75px;
+  padding-top: 64px;
   padding-bottom: 64px;
 }
 
@@ -656,6 +643,11 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 632px) {
+  .my-skills__row-cards {
+    width: 200;
+  }
 }
 
 .my-works {

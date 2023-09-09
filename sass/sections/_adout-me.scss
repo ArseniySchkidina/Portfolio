@@ -1,14 +1,24 @@
 .about-me {
     padding-top: 64px;
     padding-bottom: 64px;
-    
 }
+
 .about-me__description {
     font-size: 24px;
     width: 904px;
     line-height: 1.05;
-    // vertical-align: middle;
+    /* Tablet */
+    @media (max-width: 1243px) {
+        font-weight: 500;
+        width: 451px;
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
 }
+
+
+
 .about-me__content {
     display: flex;
     column-gap: 32px;
@@ -18,12 +28,13 @@
         flex-shrink: 0;
     }
 
+
     /* Tablet */
     @media (max-width: 1243px) {
         // flex-direction: column;
         // column-gap: 0;
         // align-items: center;
         // row-gap: 64px;
-        
+
 }
 }
