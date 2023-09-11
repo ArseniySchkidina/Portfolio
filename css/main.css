@@ -88,6 +88,12 @@ legend {
   display: block;
 }
 
+@font-face {
+  font-family: 'Impact';
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/impact.ttf") format("ttf");
+}
 html {
   min-height: 100vh;
   /* sticky footer */
@@ -687,6 +693,13 @@ select:-webkit-autofill:focus {
 }
 .footer .logo {
   margin-bottom: 16px;
+  /* Tablet */
+}
+@media (max-width: 1243px) {
+  .footer .logo {
+    width: 161px;
+    margin: 0 auto 18px;
+  }
 }
 
 .footer__content {
@@ -699,14 +712,43 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 1243px) {
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 64px;
+  }
+}
 
 .footer__description {
   width: 213px;
+  /* Tablet */
+}
+@media (max-width: 1243px) {
+  .footer__description {
+    width: 339px;
+  }
 }
 
 .footer__text {
   font-size: 20px;
   line-height: 1.1;
+}
+
+.wrapper-footer-title {
+  /* Tablet */
+}
+@media (max-width: 1243px) {
+  .wrapper-footer-title {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
 }
 
 .logo--footer {
