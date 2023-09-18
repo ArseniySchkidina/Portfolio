@@ -4,6 +4,11 @@
     @media (max-width: 1243px) {
         margin-bottom: 9px
     }
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        margin-bottom: 16px;
+    }
 }
 
 .main-title {
@@ -11,14 +16,29 @@
     font-size: 64px;
     line-height: 1.05;
     color: $colorTitle;
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        font-size: 40px;
+    }
 }
 .wrapper-main-subtitle {
     margin-bottom: 14px;
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        margin-bottom: 16px;
+    }
 }
 .main-subtitle {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.05;
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        font-size: 32px;
+    }
 }
 .context-title{
     color: #0377FF;

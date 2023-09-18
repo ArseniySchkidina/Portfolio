@@ -1,8 +1,18 @@
 .author{
     width: 448px;
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        width: 314px;
+    }
 }
 .author__description {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.05;
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        font-size: 24px;
+    }
 }

@@ -5,7 +5,12 @@
     @media (max-width: 1243px) {
         padding-top: 128px;
         padding-bottom: 128px;
-    
+    }
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        padding-top: 142px;
+        padding-bottom: 142px;
     }
 
 }
