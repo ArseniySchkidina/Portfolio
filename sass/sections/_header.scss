@@ -7,6 +7,14 @@
         padding-top: 16px;
         padding-bottom: 16px;
     }
+    .container{
+        /* Mobile */
+        @media (max-width: 662px) {
+            display: none;
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
+    }
 }
 .header__content {
     display: flex;
