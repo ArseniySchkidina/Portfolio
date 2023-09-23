@@ -10,10 +10,16 @@
     column-gap: 16px;
     justify-content: center;
     
+    /* Tablet */
     @media (max-width:1243px){
         row-gap: 16px;
         flex-wrap: wrap;
         
     }
 
+    /* Mobile */
+    @media (max-width: 662px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }

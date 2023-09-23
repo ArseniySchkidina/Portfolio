@@ -9,4 +9,12 @@
     border-radius: 5px;
     min-width: 153px;
     transition: border-color 0.5s;
+
+    /* Mobile */
+    @media (max-width: 662px) {
+        font-size: 24px;
+        font-weight: 500;
+        
+
+    }
 }
