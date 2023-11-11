@@ -1,6 +1,15 @@
 .header{
     padding-top: 21px;
     padding-bottom: 21px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    
+    .wrapper-logo{
+        z-index: 2;
+    }
 
     // Tablet
     @media (max-width: 1423px) {
@@ -38,8 +47,6 @@
     line-height: 1.05;  
     column-gap: 64px;
 
-    // li:not(:last-child){
-    //     margin-right: 64px;
-    // }
+    
 }
 // /* Tablet */
