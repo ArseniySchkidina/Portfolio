@@ -400,9 +400,12 @@ select:-webkit-autofill:focus {
   width: 200px;
   height: 300px;
   position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   /* Mobile */
 }
-.card-skill__front, .card-skill__back {
+.card-skill .card-skill__front,
+.card-skill .card-skill__back {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -414,7 +417,7 @@ select:-webkit-autofill:focus {
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
-.card-skill__front {
+.card-skill .card-skill__front {
   background-color: #21201D;
   border-radius: 10px;
   padding-top: 60px;
@@ -434,32 +437,11 @@ select:-webkit-autofill:focus {
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
 }
-.card-skill__back {
+.card-skill .card-skill__back {
   background-color: #2255b3;
   -webkit-transform: perspective(600px) rotateY(180deg);
           transform: perspective(600px) rotateY(180deg);
-}
-.card-skill.active {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotateY(0deg);
-          transform: translate(-50%, -50%) rotateY(0deg);
-  min-width: 500px;
-  min-height: 400px;
-  z-index: 3;
-}
-.card-skill.active__front {
-  -webkit-transform: perspective(600px) rotateY(-180deg);
-          transform: perspective(600px) rotateY(-180deg);
-  -webkit-backface-visibility: visible;
-          backface-visibility: visible;
-}
-.card-skill.active__back {
-  -webkit-transform: perspective(600px) rotateY(0deg);
-          transform: perspective(600px) rotateY(0deg);
-  -webkit-backface-visibility: visible;
-          backface-visibility: visible;
+  position: absolute;
 }
 @media (max-width: 662px) {
   .card-skill {
@@ -535,6 +517,25 @@ select:-webkit-autofill:focus {
 }
 .card-skill__holder-img svg {
   margin: 0 auto;
+}
+
+.card-skill.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateY(0deg) !important;
+          transform: translate(-50%, -50%) rotateY(0deg) !important;
+  min-width: 500px;
+  min-height: 400px;
+  z-index: 3;
+}
+.card-skill.active .card-skill__front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+.card-skill.active .card-skill__back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
 }
 
 .card-works {
@@ -947,6 +948,7 @@ select:-webkit-autofill:focus {
 .my-skills {
   padding-top: 64px;
   padding-bottom: 64px;
+  position: relative;
 }
 
 .my-skills__row-cards {
