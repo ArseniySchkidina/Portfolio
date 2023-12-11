@@ -438,7 +438,7 @@ select:-webkit-autofill:focus {
           transform: perspective(600px) rotateY(0deg);
 }
 .card-skill .card-skill__back {
-  background-color: rgba(34, 85, 179, 0.8);
+  background-color: rgba(33, 32, 29, 0.8);
   -webkit-transform: perspective(600px) rotateY(180deg);
           transform: perspective(600px) rotateY(180deg);
   position: absolute;
@@ -530,7 +530,7 @@ select:-webkit-autofill:focus {
           transform: translate(-50%, -50%) rotateY(0deg) !important;
   min-width: 500px;
   min-height: 400px;
-  z-index: 3;
+  z-index: 4;
 }
 .card-skill.active .card-skill__front {
   -webkit-transform: perspective(600px) rotateY(-180deg);
@@ -545,6 +545,21 @@ select:-webkit-autofill:focus {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.fade-block {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(3, 121, 255, 0.701);
+  z-index: 3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fade-block.open {
+  top: 0;
 }
 
 .card-works {

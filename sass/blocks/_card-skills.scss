@@ -26,7 +26,7 @@
         transform: perspective(600px) rotateY(0deg);
     }
     .card-skill__back{
-        background-color: rgba(34, 85, 179, 0.8);
+        background-color: $colorBackside;
         transform: perspective(600px) rotateY(180deg);
         position: absolute;
         border-radius: 25px;
@@ -113,7 +113,7 @@
     transform: translate(-50%,-50%) rotateY(0deg) !important;
     min-width: 500px;
     min-height: 400px;
-    z-index: 3;
+    z-index: 4;
 
     .card-skill__front{
         transform: perspective(600px) rotateY(-180deg);
@@ -129,7 +129,20 @@
     right: 10px;
 }
 
+.fade-block {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(3, 121, 255, 0.701);
+    z-index: 3;
+    transition: 0.5s;
 
+    &.open {
+        top: 0;
+    }
+}
 
 
 
