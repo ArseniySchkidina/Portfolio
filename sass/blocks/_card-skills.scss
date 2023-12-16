@@ -31,6 +31,9 @@
         position: absolute;
         border-radius: 25px;
         backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Mobile */
@@ -127,6 +130,11 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    transition: 0.5s ease-in;
+
+    &:hover{
+        transform: rotate(360deg);
+    }
 }
 
 .fade-block {
@@ -143,6 +151,9 @@
         top: 0;
     }
 }
-
+.card-skill__description{
+    width: 80%;
+    text-align: center;
+}
 
 
