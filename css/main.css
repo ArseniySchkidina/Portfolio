@@ -1180,6 +1180,12 @@ select:-webkit-autofill:focus {
           transform: translateY(-50%);
   z-index: 2;
 }
+.slider__arrow:hover path {
+  fill: #0377FF;
+}
+.slider__arrow:active path {
+  fill: #32312E;
+}
 
 .slider__arrow--left {
   left: -60px;

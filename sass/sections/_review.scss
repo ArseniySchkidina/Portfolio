@@ -41,10 +41,21 @@
     height: 50px;
     transform: translateY(-50%);
     z-index: 2;
+
+    &:hover{
+        path{
+            fill: $colorTitle;
+        }
+    }
+    &:active{
+        path{
+            fill: $colorButton;
+        }
+    }
 }   
 .slider__arrow--left {
     left: -60px;
-    transform: translateY(-50%) rotate(180deg) ;
+    transform: translateY(-50%) rotate(180deg);
 }
 .slider__arrow--right {
     right: -60px;
