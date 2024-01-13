@@ -1186,6 +1186,11 @@ select:-webkit-autofill:focus {
 .slider__arrow:active path {
   fill: #32312E;
 }
+@media (max-width: 662px) {
+  .slider__arrow {
+    display: none;
+  }
+}
 
 .slider__arrow--left {
   left: -60px;

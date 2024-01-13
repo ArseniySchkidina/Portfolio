@@ -52,6 +52,11 @@
             fill: $colorButton;
         }
     }
+
+    // Mobile
+    @media (max-width: 662px){
+        display: none;
+    }
 }   
 .slider__arrow--left {
     left: -60px;
