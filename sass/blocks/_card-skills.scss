@@ -4,6 +4,12 @@
     position: relative;
     transition: all 0.5s ease;
 
+    // Mobile
+    @media (max-width: 662px){
+        height: 60px;
+        width: 250px;
+    }
+
     .card-skill__front,
     .card-skill__back{
         width: 100%;
@@ -24,6 +30,15 @@
         row-gap: 16px;
         border-radius: 10px;
         transform: perspective(600px) rotateY(0deg);
+
+        // Mobile
+        @media (max-width: 662px) {
+            column-gap: 15px;
+            justify-content: center;
+            flex-direction: row;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
     }
     .card-skill__back{
         background-color: $colorBackside;
@@ -45,13 +60,7 @@
         padding-right: 12px;
         min-width: 285px;
         column-gap: 20px;
-    }
-
-    .skill-img{
-        transition: fill 0.5s;
-    }
-
-    &:hover{
+        
         .skill-img--html{
             fill: #FC490B;
         }
@@ -87,7 +96,54 @@
             border-color:#F25234;
             box-shadow: 0px 0px 4px 1px #F25234,inset 0px 0px 4px 1px #F25234;
         }
-        }
+    }
+
+    .skill-img{
+        transition: fill 0.5s;
+    }
+
+    @media (hover:hover){
+        &:hover{
+            .skill-img--html{
+                fill: #FC490B;
+            }
+            .skill-img--css{
+                fill: #2196F4;
+            }
+            .skill-img--js{
+                fill: #FFDF00;
+            }
+            .skill-img--scss{
+                fill: #CA669B;
+            }
+            .skill-img--git{
+                fill:#F25234;
+            }
+            .context-button--html{
+                border-color:#FC490B;
+                box-shadow: 0px 0px 4px 1px #FC490B,inset 0px 0px 4px 1px #FC490B;
+            }
+            .context-button--css{
+                border-color: #2196F4;
+                box-shadow: 0px 0px 4px 1px #2196F4,inset 0px 0px 4px 1px #2196F4;
+            }
+            .context-button--js{
+                border-color: #FFDF00;
+                box-shadow: 0px 0px 4px 1px #FFDF00,inset 0px 0px 4px 1px #FFDF00;
+            }
+            .context-button--scss{
+                border-color: #CA669B;
+                box-shadow: 0px 0px 4px 1px #CA669B,inset 0px 0px 4px 1px #CA669B;
+            }
+            .context-button--git{
+                border-color:#F25234;
+                box-shadow: 0px 0px 4px 1px #F25234,inset 0px 0px 4px 1px #F25234;
+            }
+            }
+        
+    }
+
+
 
     }
     
