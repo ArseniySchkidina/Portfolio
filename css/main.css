@@ -612,6 +612,12 @@ select:-webkit-autofill:focus {
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
 }
+@media (max-width: 662px) {
+  .card-skill.active {
+    min-width: 90%;
+    padding: 0;
+  }
+}
 
 .close {
   position: absolute;

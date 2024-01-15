@@ -49,6 +49,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
 
     /* Mobile */
@@ -174,12 +175,19 @@
     min-height: 400px;
     z-index: 4;
 
+
     .card-skill__front{
         transform: perspective(600px) rotateY(-180deg);
         
     }
     .card-skill__back{
         transform: perspective(600px) rotateY(0deg);
+    }
+
+    // Mobile
+    @media (max-width: 662px){
+        min-width: 90%;
+        padding: 0;
     }
 }
 .close{
