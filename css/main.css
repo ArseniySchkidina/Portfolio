@@ -1212,8 +1212,9 @@ select:-webkit-autofill:focus {
 .slider-review__slide {
   width: 400px;
   height: 300px;
-  background-color: aqua;
+  background-color: #32312E;
   margin: 0 10px;
+  padding: 10px;
 }
 
 .slick-dots {
@@ -1272,4 +1273,34 @@ select:-webkit-autofill:focus {
   right: -60px;
 }
 
+.slider-review__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slider-review__text {
+  font-size: 20px;
+}
+
+.slider-review__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.slider-review__name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0377FF;
+}
 /*# sourceMappingURL=main.css.map */
