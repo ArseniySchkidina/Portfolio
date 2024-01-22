@@ -1257,9 +1257,9 @@ select:-webkit-autofill:focus {
 .slider__arrow:active path {
   fill: #32312E;
 }
-@media (max-width: 662px) {
+@media (max-width: 1024px) {
   .slider__arrow {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1279,9 +1279,21 @@ select:-webkit-autofill:focus {
   border-radius: 50%;
   overflow: hidden;
 }
+@media (max-width: 1024px) {
+  .slider-review__avatar {
+    height: 40px;
+    width: 40px;
+  }
+}
 
 .slider-review__text {
   font-size: 20px;
+}
+@media (max-width: 1024px) {
+  .slider-review__text {
+    line-height: 1.2;
+    font-size: 18px;
+  }
 }
 
 .slider-review__top {
@@ -1296,6 +1308,7 @@ select:-webkit-autofill:focus {
           justify-content: center;
   -webkit-column-gap: 10px;
           column-gap: 10px;
+  margin-bottom: 10px;
 }
 
 .slider-review__name {
@@ -1303,4 +1316,5 @@ select:-webkit-autofill:focus {
   font-weight: 600;
   color: #0377FF;
 }
+
 /*# sourceMappingURL=main.css.map */
