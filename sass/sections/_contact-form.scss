@@ -23,6 +23,7 @@
 }
 .form__item {
     width: 90%;
+    position: relative;
 }
 .form__input {
     background-color: $colorTitle;
@@ -32,7 +33,14 @@
     border-radius: 10px;
 }
 .form__fake-placeholder {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    padding-left: 10px;
 
+    &--message{
+        bottom: 93%;
+    }
 }
 .form__input--message {
     min-height: 250px;
@@ -50,6 +58,7 @@
 
     &:active{
         background-color: $colorTitle;
+    
     }
     @media (hover:hover){
         &:hover {
