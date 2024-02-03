@@ -37,10 +37,19 @@
     bottom: 50%;
     transform: translateY(50%);
     padding-left: 10px;
+    font-size: 20px;
+    &.active {
+        bottom: 105%;
+    }
 
     &--message{
         bottom: 93%;
+
+        &.active{
+            bottom: 100%;
+        }
     }
+
 }
 .form__input--message {
     min-height: 250px;

@@ -1366,9 +1366,16 @@ select:-webkit-autofill:focus {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   padding-left: 10px;
+  font-size: 20px;
+}
+.form__fake-placeholder.active {
+  bottom: 105%;
 }
 .form__fake-placeholder--message {
   bottom: 93%;
+}
+.form__fake-placeholder--message.active {
+  bottom: 100%;
 }
 
 .form__input--message {
