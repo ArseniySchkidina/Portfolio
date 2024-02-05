@@ -1,9 +1,14 @@
-// 1. Отследить focus на input'ах.
-// 2. Поднять placeholder на верх.
-// 3. Вешать active на input.
 const inputs = document.querySelectorAll(".form__input");
 inputs.forEach(input => {
     input.addEventListener("focus",() =>{
         input.nextElementSibling.classList.add("active")
+    })
+})
+// при потере фокуса при условии, что форма не заполнена, плэйсхолдэр опустится назад
+inputs.forEach(input =>{
+    input.addEventListener("blur",() =>{
+        if(!input.value.trim().length > 0){
+            input.nextElementSibling.classList.remove("active")
+        }
     })
 })

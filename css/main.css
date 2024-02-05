@@ -1367,6 +1367,9 @@ select:-webkit-autofill:focus {
           transform: translateY(50%);
   padding-left: 10px;
   font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
 }
 .form__fake-placeholder.active {
   bottom: 105%;
