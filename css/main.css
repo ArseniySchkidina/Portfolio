@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;900&display=swap");
 * {
@@ -1390,6 +1391,22 @@ select:-webkit-autofill:focus {
   resize: none;
   margin-top: 10px;
   margin-bottom: 5px;
+  /* полоса прокрутки (скроллбар) */
+  /* ползунок скроллбара */
+}
+.form__input--message::-webkit-scrollbar {
+  width: 10px;
+  /* ширина для вертикального скролла */
+  height: 5px;
+  /* высота для горизонтального скролла */
+  background-color: #161c36;
+}
+.form__input--message::-webkit-scrollbar-thumb {
+  background-color: #f0e3ca;
+  border-radius: 5px;
+}
+.form__input--message::-webkit-scrollbar-thumb:hover {
+  background-color: #32312E;
 }
 
 .input-submit {

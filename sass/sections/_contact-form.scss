@@ -66,6 +66,23 @@
     resize: none;
     margin-top: 10px;
     margin-bottom: 5px;
+
+        /* полоса прокрутки (скроллбар) */
+    &::-webkit-scrollbar {
+        width: 10px; /* ширина для вертикального скролла */
+        height: 5px; /* высота для горизонтального скролла */
+        background-color: $colorScroll;
+    }
+
+    /* ползунок скроллбара */
+    &::-webkit-scrollbar-thumb {
+        background-color: $colorText;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: $colorButton;
+    }
 }
 .wrapper-btn {
 
@@ -88,3 +105,4 @@
         }
     }
 }
+
