@@ -442,6 +442,7 @@ select:-webkit-autofill:focus {
   border-radius: 10px;
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
+  z-index: 2;
 }
 @media (max-width: 662px) {
   .card-skill .card-skill__front {
@@ -1424,6 +1425,11 @@ select:-webkit-autofill:focus {
   .input-submit:hover {
     background-color: hwb(0 100% 0%/0.418);
   }
+}
+
+#answer {
+  text-align: center;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

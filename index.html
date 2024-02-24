@@ -317,23 +317,26 @@
         <section class="contact-form">
             <div class="container">
                 <div class="contact-form__content">
-                    <form class="form" action="">
+                    <form class="form" method="post" action="./php/mail.php" id="form">
                         <div class="form__item">
-                            <input class="form__input" type="text">
+                            <input class="form__input" type="text" name="name">
                             <span class="form__fake-placeholder">Name</span>
                         </div>
                         <div class="form__item">
-                            <input class="form__input" type="email">
+                            <input class="form__input" type="email" name="email">
                             <span class="form__fake-placeholder">E-mail</span>
                         </div>
                         <div class="form__item">
-                            <textarea class="form__input form__input--message" name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit impedit numquam tenetur aliquid, incidunt fugiat adipisci aliquam eius inventore commodi, beatae dolor facere consectetur quae nesciunt quos nemo eligendi. Aut nesciunt saepe aspernatur vero accusamus iste quasi odit quisquam vel eaque consequuntur harum, vitae illo aliquid exercitationem tempora, modi perspiciatis dolorem consectetur! Quod vero amet, vitae exercitationem necessitatibus cupiditate quisquam voluptatem repellat nobis recusandae facilis aperiam dolor expedita debitis quaerat, distinctio et? Impedit nesciunt nobis quo nostrum at velit quas consequatur nisi, commodi ab architecto facere consequuntur, blanditiis, iusto cupiditate voluptatibus sed fuga quam quibusdam beatae vel rerum. Soluta?</textarea>
+                            <textarea class="form__input form__input--message" name="message" id="" cols="30" rows="10"></textarea>
                             <span class="form__fake-placeholder form__fake-placeholder--message">Message</span>
                         </div>
                         <div class="wrapper-btn">
                             <input class="input-submit" type="submit" value="Send">
                         </div>
                     </form>
+
+                    <div id="answer"></div>
+
                 </div>
             </div>
         </section>
@@ -419,11 +422,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/cards.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/contact-form.js"></script>
+    <script src="./js/validation.js"></script>
+    
 </body>
 </html>

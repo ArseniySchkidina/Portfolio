@@ -30,6 +30,7 @@
         row-gap: 16px;
         border-radius: 10px;
         transform: perspective(600px) rotateY(0deg);
+        z-index: 2;
 
         // Mobile
         @media (max-width: 662px) {
