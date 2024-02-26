@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
+    background-color: transparent;
 
     &.active{
         .burger-line:first-child{
@@ -17,6 +18,8 @@
             transform: rotate(-45deg) translate(0, -14px);
     }
     }
+
+    
 }
 .burger-line {
     display: inline-block;

@@ -626,6 +626,7 @@ select:-webkit-autofill:focus {
   right: 10px;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
+  background-color: transparent;
 }
 .close:hover {
   -webkit-transform: rotate(360deg);
@@ -817,6 +818,7 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 2;
+  background-color: transparent;
 }
 .burger.active .burger-line:first-child {
   -webkit-transform: rotate(45deg) translate(0, 15px);
