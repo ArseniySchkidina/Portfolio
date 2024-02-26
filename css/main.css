@@ -424,7 +424,7 @@ select:-webkit-autofill:focus {
   transition: transform 1s, -webkit-transform 1s;
 }
 .card-skill .card-skill__front {
-  background-color: #21201D;
+  background-color: #21201d;
   border-radius: 10px;
   padding-top: 60px;
   padding-bottom: 54px;
@@ -641,7 +641,7 @@ select:-webkit-autofill:focus {
           transform: translateY(-100%);
   width: 100%;
   height: 100vh;
-  background-color: red;
+  background-color: rgba(3, 121, 255, 0.701);
   z-index: 3;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -668,7 +668,7 @@ select:-webkit-autofill:focus {
 .card-works__info {
   padding-top: 40.5px;
   padding-bottom: 40.5px;
-  background-color: #21201D;
+  background-color: #21201d;
   position: absolute;
   top: -100%;
   width: 100%;
@@ -1212,6 +1212,11 @@ select:-webkit-autofill:focus {
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .slider-review {
+    width: 100%;
+  }
+}
 
 .slick-list {
   overflow: hidden;
@@ -1226,7 +1231,7 @@ select:-webkit-autofill:focus {
 .slider-review__slide {
   width: 400px;
   height: 300px;
-  background-color: #21201D;
+  background-color: #21201d;
   margin: 0 10px;
   padding: 10px;
 }
@@ -1338,7 +1343,7 @@ select:-webkit-autofill:focus {
 }
 
 .form {
-  background-color: #21201D;
+  background-color: #21201d;
   width: 40%;
   margin: 0 auto;
   display: -webkit-box;
