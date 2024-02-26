@@ -899,6 +899,7 @@ select:-webkit-autofill:focus {
 }
 .header .wrapper-logo {
   z-index: 2;
+  max-width: 180px;
 }
 @media (max-width: 1423px) {
   .header {
