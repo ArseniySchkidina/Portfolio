@@ -57,21 +57,7 @@ html {
     padding-right: 15px;
     
     /* Tablet */
-    @media (max-width: 1243px) {
-        max-width: 662px;
-    }
-    &--fluid {
-    max-width: unset;
-    }
     
-    &--no-padding {
-    padding: 0;
-    }
-    
-    /* Mobile */
-    @media (max-width: 662px) {
-        max-width: 443px;
-    }
     
     }
     
