@@ -5,6 +5,9 @@
     @media (max-width: 662px) {
         width: 314px;
     }
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 .author__description {
     font-weight: 400;
@@ -14,5 +17,8 @@
     /* Mobile */
     @media (max-width: 662px) {
         font-size: 24px;
+    }
+    @media (max-width: 500px) {
+        font-size: 18px;
     }
 }

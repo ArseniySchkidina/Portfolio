@@ -13,13 +13,16 @@
     /* Mobile */
     @media (max-width: 662px) {
         width: 413px;
-        height: 430px;
+        height: auto;
+    }
+    @media (max-width: 500px){
+        width: 290px;
     }
 
 }
 .avatar__code {
-    width: auto;
-    height: auto;
+    // width: auto;
+    // height: auto;
     object-fit: cover;
 }
 .avatar__background {
@@ -47,7 +50,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    
 
     /* Mobile */
     @media (max-width: 662px) {
