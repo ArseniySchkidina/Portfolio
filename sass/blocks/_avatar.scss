@@ -2,12 +2,25 @@
     width: 629px;
     height: 575px;
     position: relative;
-
+    @media (max-width: 1243px) {
+        width: 521px;
+        height: 467px;
+    }
+    @media (max-width: 1024px){
+        width: 629px;
+        height: 575px;
+    }
     /* Mobile */
     @media (max-width: 662px) {
         width: 413px;
         height: 430px;
     }
+
+}
+.avatar__code {
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 .avatar__background {
     

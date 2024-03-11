@@ -17,15 +17,14 @@
 
 .preview__content {
     display: flex;
-    column-gap: 137px;
     align-items: center;
+    justify-content: space-between;
 
     &>*{
         flex-shrink: 0;
     }
 
-    /* Tablet */
-    @media (max-width: 1243px) {
+    @media (max-width: 1024px){
         flex-direction: column;
         column-gap: 0;
         align-items: center;

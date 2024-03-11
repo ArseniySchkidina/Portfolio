@@ -271,11 +271,24 @@ select:-webkit-autofill:focus {
   position: relative;
   /* Mobile */
 }
+@media (max-width: 1243px) {
+  .avatar {
+    width: 521px;
+    height: 467px;
+  }
+}
 @media (max-width: 662px) {
   .avatar {
     width: 413px;
     height: 430px;
   }
+}
+
+.avatar__code {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .avatar__photo {
@@ -823,15 +836,14 @@ select:-webkit-autofill:focus {
 
 .preview__content {
   display: flex;
-  -moz-column-gap: 137px;
-       column-gap: 137px;
   align-items: center;
+  justify-content: space-between;
   /* Tablet */
 }
 .preview__content > * {
   flex-shrink: 0;
 }
-@media (max-width: 1243px) {
+@media (max-width: 1024px) {
   .preview__content {
     flex-direction: column;
     -moz-column-gap: 0;

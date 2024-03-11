@@ -294,11 +294,30 @@ select:-webkit-autofill:focus {
   position: relative;
   /* Mobile */
 }
+@media (max-width: 1243px) {
+  .avatar {
+    width: 521px;
+    height: 467px;
+  }
+}
 @media (max-width: 662px) {
   .avatar {
     width: 413px;
     height: 430px;
   }
+}
+@media (max-width: 1024px) {
+  .avatar {
+    width: 629px;
+    height: 575px;
+  }
+}
+
+.avatar__code {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .avatar__photo {
@@ -840,7 +859,7 @@ select:-webkit-autofill:focus {
   display: none;
   /* Mobile */
 }
-@media (max-width: 662px) {
+@media (max-width: 768px) {
   .mobile-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -889,20 +908,9 @@ select:-webkit-autofill:focus {
   z-index: 2;
   max-width: 180px;
 }
-@media (max-width: 1423px) {
-  .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-.header .container {
-  /* Mobile */
-}
-@media (max-width: 662px) {
+@media (max-width: 768px) {
   .header .container {
     display: none;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 
@@ -910,24 +918,21 @@ select:-webkit-autofill:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 522px;
-          column-gap: 522px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-@media (max-width: 1243px) {
+@media (max-width: 850px) {
   .header__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-column-gap: 0;
-            column-gap: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     row-gap: 28px;
+    padding: 16px 0;
   }
 }
 
@@ -965,18 +970,19 @@ select:-webkit-autofill:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 137px;
-          column-gap: 137px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /* Tablet */
 }
 .preview__content > * {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-@media (max-width: 1243px) {
+@media (max-width: 1024px) {
   .preview__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
