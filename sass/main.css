@@ -951,17 +951,10 @@ select:-webkit-autofill:focus {
 
 .my-work__row-cards {
   display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  gap: 16px;
   justify-content: center;
-  /* Tablet */
-}
-@media (max-width: 1243px) {
-  .my-work__row-cards {
-    flex-direction: column;
-    row-gap: 16px;
-    align-items: center;
-  }
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer {

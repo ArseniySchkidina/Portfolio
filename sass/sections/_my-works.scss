@@ -7,13 +7,8 @@
 }
 .my-work__row-cards {
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
     justify-content: center;
-    
-    /* Tablet */
-    @media (max-width: 1243px) {
-        flex-direction: column;
-        row-gap: 16px;
-        align-items: center;
-    }
+    flex-wrap: wrap;
+    align-items: center;
 }
