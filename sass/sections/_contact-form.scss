@@ -1,17 +1,13 @@
-
-
 .contact-form{
     padding-top: 64px;
     padding-bottom: 64px;
 
 }
-
 .contact-form__content {
-
 }
 .form {
     background-color: $colorCard;
-    width: 40%;
+    width: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -21,9 +17,11 @@
     padding-top: 30px;
     border-radius: 20px;
 
-    
+    @media (max-width: 768px){
+        width: 100%;
+    }
 }
-.form__item {
+.form__item{
     width: 90%;
     position: relative;
 }
