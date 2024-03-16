@@ -456,8 +456,6 @@ select:-webkit-autofill:focus {
     flex-direction: row;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 32px;
-    padding-right: 12px;
     min-width: 285px;
     -moz-column-gap: 20px;
          column-gap: 20px;
@@ -934,23 +932,15 @@ select:-webkit-autofill:focus {
 
 .my-skills__row-cards {
   display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  gap: 16px;
   justify-content: center;
-  /* Tablet */
+  flex-wrap: wrap;
   /* Mobile */
-}
-@media (max-width: 1243px) {
-  .my-skills__row-cards {
-    row-gap: 16px;
-    flex-wrap: wrap;
-  }
 }
 @media (max-width: 662px) {
   .my-skills__row-cards {
     flex-direction: column;
     align-items: center;
-    row-gap: 16px;
   }
 }
 
