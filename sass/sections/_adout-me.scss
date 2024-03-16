@@ -1,43 +1,30 @@
 .about-me {
     padding-top: 64px;
     padding-bottom: 64px;
-
-    
-
 }
-
 .about-me__description {
     font-size: 24px;
-    width: 904px;
+    max-width: 904px;
     line-height: 1.05;
     /* Tablet */
     @media (max-width: 1243px) {
         font-weight: 500;
-        width: 451px;
         font-size: 22px;
         line-height: 1.2;
     }
-
     /* Mobile */
     @media (max-width: 662px) {
-        // font-weight: 500;
-        width: 322px;
+        width: 100%;
         font-size: 22px;
         line-height: 1.2;
+        text-align: center;
     }
-
 }
-
-
 .about-me__content {
     display: flex;
     column-gap: 32px;
     justify-content: center;
     align-items: center;
-    &>*{
-        flex-shrink: 0;
-    }
-
     /* Mobile */
     @media (max-width: 662px) {
         flex-direction: column;
