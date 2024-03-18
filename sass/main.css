@@ -798,6 +798,10 @@ select:-webkit-autofill:focus {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.mobile-menu__list .anchor-link {
+  font-size: 20px;
+  font-weight: 600;
+}
 
 .header {
   padding-top: 21px;
