@@ -1,53 +1,38 @@
 .footer {
     .logo{
-        margin-bottom: 16px;
-
-
-        /* Tablet */
-        @media (max-width: 1243px) {
-                width: 161px;
-                margin: 0 auto 18px; 
-                
-        }
+        width: 161px;
+        margin: 0 auto 18px; 
     }
     padding-top: 64px;
     padding-bottom: 64px;
 }
-
 .footer__content {
     display: flex;
     column-gap: 64px;
     justify-content: center;
-
-    @media (max-width: 1243px) {
+    @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
         row-gap: 64px;
     }
 }
-
 .footer__description {
     width: 213px;
-
     /* Tablet */
-    @media (max-width: 1243px) {
-        width: 339px;
+    @media (max-width: 768px) {
+        width: 100%;
     }
 }
-
 .footer__text {
     font-size: 20px;
     line-height: 1.1;
+    text-align: center;
 }
-
 .footer__contacts {
-    
 }
 .wrapper-footer-title {
-    
-
     /* Tablet */
-    @media (max-width: 1243px) {
+    @media (max-width: 768px) {
         margin-top: 5px;
         text-align: center;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
